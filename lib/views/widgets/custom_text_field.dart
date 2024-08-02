@@ -13,7 +13,7 @@ class CustomTextField extends StatelessWidget {
         hintText: hintText,
 
         // border: getBorder(),
-        focusedBorder: getBorder(KPrimaryColor),
+        focusedBorder: getBorder(kPrimaryColor),
         enabledBorder: getBorder(),
       ),
     );
