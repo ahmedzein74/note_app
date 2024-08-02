@@ -8,6 +8,7 @@ class NotesListView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: ListView.separated(
+          physics: const BouncingScrollPhysics(),
           itemBuilder: (context, index) {
             return const NoteItems();
           },
