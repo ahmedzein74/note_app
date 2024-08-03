@@ -12,6 +12,7 @@ class CustomFAB extends StatelessWidget {
       child: FloatingActionButton(
         onPressed: () {
           showModalBottomSheet(
+            isScrollControlled: true,
             context: context,
             builder: (BuildContext context) {
               return const AddNoteBottomSheet();
@@ -25,3 +26,19 @@ class CustomFAB extends StatelessWidget {
     );
   }
 }
+// void _showBottomSheet(BuildContext context) {
+//     showModalBottomSheet(
+//       context: context,
+//       isScrollControlled: true,
+//       builder: (context) {
+//         return Padding(
+//           padding: EdgeInsets.only(
+//             bottom: MediaQuery.of(context).viewInsets.bottom,
+//           ),
+//           child: const SingleChildScrollView(
+//             child: AddNoteBottomSheet()
+//           ),
+//         );
+//       },
+//     );
+//   }
