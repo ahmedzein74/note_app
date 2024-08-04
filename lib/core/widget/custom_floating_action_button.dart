@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:note_app/views/widgets/add_note_bottom_sheet.dart';
+import 'package:note_app/features/notes/presentation/widget/bottom_sheet_widget/add_note_bottom_sheet.dart';
 
 class CustomFAB extends StatelessWidget {
   const CustomFAB({super.key});
